@@ -1,0 +1,115 @@
+echo '>e
+echo '>n
+echo '>e
+echo '>x weight
+echo '>x ladder
+echo '>x preserver
+echo '>x life
+echo '>d
+echo '>nw
+echo '>u
+echo '>d
+echo '>x button
+echo '>press button
+echo '>nw
+echo '>press ladder
+echo '>x ladder
+echo '>press lamp
+echo '>x lamp
+echo '>drop weight
+echo '>dropweight
+echo '>u
+echo '>getall
+echo '>dropweight
+echo '>d
+echo '>u
+echo '>getall
+echo '>d
+echo '>dropweight
+echo '>l
+echo '>i
+echo '>u
+echo '>getall
+echo '>u
+echo '>nw
+echo '>u
+echo '>getall
+echo '>se
+echo '>d
+echo '>nw
+echo '>ne
+echo '>w
+echo '>s
+echo '>w
+echo '>getall
+echo '>dropweight
+echo '>e
+echo '>n
+echo '>e
+echo '>d
+echo '>nw
+echo '>u
+echo '>se
+echo '>d
+echo '>nw
+echo '>nw
+echo '>s
+echo '>s
+echo '>x lake
+echo '>s
+echo '>s
+echo '>x chute
+echo '>n
+echo '>put
+echo '>score
+echo '>i
+echo '>s
+echo '>put
+echo '>put
+echo '>n
+echo '>put
+echo '>i
+echo '>score
+echo '>ls ~/PA2/rooms | xargs echo | fold -sw75
+echo '>cd ~/PA2/rooms/treasureRoom/
+echo '>ls | xargs echo | fold -sw75
+echo '>l
+echo '>n
+echo '>mv 1 9
+echo '>cd ~/_/buttonRoom/nw/u/se/d/nw/nw/s/s/s
+echo '>s
+echo '>s
+echo '>n
+echo '>basename `pwd`
+echo '>getall
+echo '>e
+echo '>e
+echo '>s
+echo '>d
+echo '>i
+echo '>score
+echo '>put
+echo '>score
+echo '>i
+echo '>ls ~/PA2/rooms/treasureRoom/ | xargs echo | fold -sw75
+echo '>l
+echo '>getall
+echo '>ls ~/PA2/rooms/treasureRoom/ | xargs echo | fold -sw75
+echo '>score
+echo '>flush
+echo '>ls ~/PA2/rooms/treasureRoom/ | xargs echo | fold -sw75
+echo '>mv ~/PA2/rooms/i/i/* ~/PA2/rooms/treasureRoom/
+echo '>ls ~/PA2/rooms/treasureRoom/ | xargs echo | fold -sw75
+echo '>i
+echo '>score
+echo '>mv ~/PA2/rooms/treasureRoom/[^9d]* ~/PA2/rooms/i/i
+echo '>ls ~/PA2/rooms/treasureRoom | xargs echo | fold -sw75
+echo '>i
+echo '>score
+echo '> ls ~/PA2/rooms/i/i | xargs echo | fold -sw75
+echo '>put
+echo '> ls ~/PA2/rooms/i/i | xargs echo | fold -sw75
+echo '> ls ~/PA2/rooms/treasureRoom | xargs echo | fold -sw75
+echo '> ls | xargs echo | fold -sw75
+echo '>ls ~/PA2/rooms | xargs echo | fold -sw75
+echo '>flush

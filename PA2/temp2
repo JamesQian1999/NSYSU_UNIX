@@ -1,0 +1,115 @@
+>e
+>n
+>e
+>x weight
+>x ladder
+>x preserver
+>x life
+>d
+>nw
+>u
+>d
+>x button
+>press button
+>nw
+>press ladder
+>x ladder
+>press lamp
+>x lamp
+>drop weight
+>dropweight
+>u
+>getall
+>dropweight
+>d
+>u
+>getall
+>d
+>dropweight
+>l
+>i
+>u
+>getall
+>u
+>nw
+>u
+>getall
+>se
+>d
+>nw
+>ne
+>w
+>s
+>w
+>getall
+>dropweight
+>e
+>n
+>e
+>d
+>nw
+>u
+>se
+>d
+>nw
+>nw
+>s
+>s
+>x lake
+>s
+>s
+>x chute
+>n
+>put
+>score
+>i
+>s
+>put
+>put
+>n
+>put
+>i
+>score
+>ls ~/PA2/rooms | xargs echo | fold -sw75
+>cd ~/PA2/rooms/treasureRoom/
+>ls | xargs echo | fold -sw75
+>l
+>n
+>mv 1 9
+>cd ~/_/buttonRoom/nw/u/se/d/nw/nw/s/s/s
+>s
+>s
+>n
+>basename `pwd`
+>getall
+>e
+>e
+>s
+>d
+>i
+>score
+>put
+>score
+>i
+>ls ~/PA2/rooms/treasureRoom/ | xargs echo | fold -sw75
+>l
+>getall
+>ls ~/PA2/rooms/treasureRoom/ | xargs echo | fold -sw75
+>score
+>flush
+>ls ~/PA2/rooms/treasureRoom/ | xargs echo | fold -sw75
+>mv ~/PA2/rooms/i/i/* ~/PA2/rooms/treasureRoom/
+>ls ~/PA2/rooms/treasureRoom/ | xargs echo | fold -sw75
+>i
+>score
+>mv ~/PA2/rooms/treasureRoom/[^9d]* ~/PA2/rooms/i/i
+>ls ~/PA2/rooms/treasureRoom | xargs echo | fold -sw75
+>i
+>score
+> ls ~/PA2/rooms/i/i | xargs echo | fold -sw75
+>put
+> ls ~/PA2/rooms/i/i | xargs echo | fold -sw75
+> ls ~/PA2/rooms/treasureRoom | xargs echo | fold -sw75
+> ls | xargs echo | fold -sw75
+>ls ~/PA2/rooms | xargs echo | fold -sw75
+>flush
