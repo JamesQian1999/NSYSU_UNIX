@@ -29,21 +29,10 @@ echo ">ne";ne
 echo ">w";w
 echo ">s";s
 echo ">e";e
-echo ">turn";turn
-echo ">turn floppy";turn floppy
 echo ">drop floppy";drop floppy
-echo ">turn floppy";turn floppy
-echo ">turn dial";turn dial
-echo ">turn counterclockwise";turn counterclockwise
-echo ">turn dial counterclockwise";turn dial counterclockwise
-echo ">turn dial counterclockwise";turn dial counterclockwise
 echo ">w";w
 echo ">e";e
 echo ">drop lamp";drop lamp
-echo ">turn dial clock wise";turn dial clock wise
-echo ">turn dial clockwise";turn dial clockwise
-echo ">turn dial clockwise";turn dial clockwise
-echo ">turn dial clockwise";turn dial clockwise
 echo ">w";w
 echo ">w";w
 echo ">get bracelet";get bracelet
@@ -57,7 +46,6 @@ echo ">break key";break key
 echo ">break dial";break dial
 echo ">e";e
 echo ">e";e
-echo ">turn dial counterclockwise";turn dial counterclockwise
 echo ">w";w
 echo ">w";w
 echo ">w";w
@@ -89,17 +77,10 @@ echo ">i";i
 echo ">e";e
 echo ">e";e
 echo ">s";s
-echo ">s";s
-echo ">d";d
-echo ">u";u
-echo ">put";put
-echo ">flush";flush
 echo ">n";n
-echo ">u";u
-echo ">drop lamp";drop lamp
+echo ">n";n
 echo ">w";w
 cp ~/PA3/comb.right ~/PA3/comb.txt
 echo ">w";w
 echo ">i";i
-echo ">break lamp";break lamp
 echo ">break cable";break cable
