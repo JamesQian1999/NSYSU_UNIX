@@ -1,0 +1,35 @@
+#!/usr/bin/tcsh
+#set echo
+set cutfl = "c1-4 --complement"
+
+set check_place = `pwd | xargs basename | fgrep -w n >& /dev/null && pwd | fgrep rooms/mistyRoom/e/e/n || echo 0`
+set way = `ls | fgrep -w $1 || echo 0`
+#echo way = $way
+#echo check_place = $check_place
+if ( $argv[1] == "w" &&  $check_place != "0" ) then
+	echo You must type a 3 digit combination code to enter this room.
+	echo -n "Enter it here: "
+	set pin = $<
+	set combination = `tr "a-zA-Z" "n-za-mN-ZA-M" < ~/PA3/savedgame | grep "combination" | grep -o "[0-9][0-9][0-9]"`
+	if ( $pin == $combination ) then
+		chmod 755 w
+		cd w
+		set find_lamp = `ls ~/_/i/i | fgrep -w lamp || echo 0`
+		if ( $find_lamp == 0 ) then
+		   grep ~/PA3/expl*Walkthrough.txt -elikely|cut -$cutfl|tee de*
+		   exit 1
+      		endif
+	else
+		echo Sorry, that combination is incorrect.&& exit 0
+	endif
+
+else if ( $way != 0 ) then
+   echo You cannot go that way. && exit 0
+else
+   basename `pwd` | tr nswe snew | fgrep -wv $1 >& /dev/null && echo You cannot go that way. && exit 0
+   cd ..
+endif
+
+head -n `ls [19]` de* && mv 9 1 >&~/X
+grep -hw `ls -d * | paste ~/_/es -` -h ~/_/T*|cut -d\; -f1
+exit 3

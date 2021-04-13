@@ -1,18 +1,21 @@
 #!/usr/bin/tcsh
-if (  ) then
-	
-else if (  ) then
-
-else if (  ) then
-
-else if (  ) then
-
-else if (  ) then
-
-else if (  ) then
-
-else if (  ) then
-
+set axe = `ls ~/_/i/i | fgrep -w axe || echo 0`
+if ( $axe == 0 ) then
+	echo "You have nothing you can use to break things."
 else
-
+	set item = `ls ~/_/i/i | fgrep -w $argv[1] || ls | fgrep -w $argv[1] || echo 0`
+	set in_room =  `ls | fgrep -w $argv[1] || echo 0`
+	if ( $item == 0 ) then
+		echo "I don't see that here."
+	else if ( $in_room != 0 && $item != "cable" ) then
+		rm $argv[1]
+		echo "Your axe breaks it into a million pieces."
+	else if ( $item == "cable" ) then
+		echo "As you break the ethernet cable, everything starts to blur.  You collapse\nfor a moment, then straighten yourself up.\n\nConnection closed."
+		exit 0
+	endif
+	
 endif
+
+exit 1
+

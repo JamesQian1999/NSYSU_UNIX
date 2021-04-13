@@ -1,8 +1,3 @@
-sed 's,cantmove w,& < ~/PA3/comb.txt,' <~/PA3/PA3.sh >~/PA3/PA3.temp.sh
-chmod u+x ~/PA3/PA3.temp.sh
-source ~/PA3/PA3.temp.sh
-#rm -f ~/PA3/PA3.temp.sh
-cp ~/PA3/comb.wrong ~/PA3/comb.txt
 echo ">get lamp";get lamp
 echo ">e";e
 echo ">n";n
@@ -77,10 +72,9 @@ echo ">i";i
 echo ">e";e
 echo ">e";e
 echo ">s";s
+echo ">s";s
+echo ">d";d
+echo ">u";u
+echo ">put";put
+echo ">flush";flush
 echo ">n";n
-echo ">n";n
-echo ">w";w
-cp ~/PA3/comb.right ~/PA3/comb.txt
-echo ">w";w
-echo ">i";i
-echo ">break cable";break cable
