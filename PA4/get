@@ -1,0 +1,92 @@
+#!/usr/bin/tcsh 
+#Section 1. 
+if ( $# == 0 ) echo You must supply an object.
+if ( $# == 0 ) exit
+
+#Section 2.
+set argv[1] = `echo $1 | tr 'A-Z' 'a-z'` 
+set argv[1] = `echo $1 | grep '^statue.*' >& /dev/null && echo rms || echo $1`
+if ( $1 == 'emerald' ) then
+	set argv[1] = 'bracelet'
+else if ( $1 == 'life' ) then
+	set argv[1] = 'preserver'
+else if ( $1 == 'disk' ) then
+	set argv[1] = 'floppy'
+else if ( $1 == 'stallman' ) then
+	set argv[1] = 'rms'
+endif
+
+#Section 3. 
+cp *[aworkv][maxslept]*[mykdrslept] ~/_/i/_ >& ~/X
+
+#Section 4. 
+if ( $1 == 'all' ) then
+   rm *[arokvw][xaslempt]*[etdyprmlsk] >& ~/X || echo Nothing to take.
+   #if ( =~ * ) echo here;exit
+   
+#Section 5. 
+else if ( -e ~/_/i/_/$1 ) then
+   rm ~/_/i/_/*
+   mv $1 ~/_/i/_
+ 
+#Section 6.
+else
+   rm ~/_/i/_/*
+   #Note __5__ is long, but it cannot be longer than 100 characters:
+   if ( -e ~/_/filenamesdir/$1  ) then
+      echo I do not know what that is.
+   else if ( -e $1 && !~ *[aworkv][maxslept]*[mykdrslept] ) then
+      echo You cannot take that.
+   else 
+      echo I do not see that here.
+   endif
+endif
+
+#Section 7: 
+(cd ~/_/i; ls */*[abdltuiokdnvrg][xeoltanbkmuah][edrxtnlmypgs] */description */diamond */rms */shovel */preserver */preserver */weight */weight */weight */weight */weight */weight */weight */weight */weight | wc -l | egrep [1-9][0-9] ) >& ~/X && echo Your load would be too heavy. && mv ~/_/i/_/* . && exit
+
+#Section 8: 
+if ( -e 'button' && $1 == 'weight' ) then
+	mv nw .nw
+	mv .u u
+	rm ne se sw w e d
+endif
+
+cd ~/_/i/_
+
+#Section 9.
+if ( $1 != 'all' ) then
+   mv * ../i >& ~/X && echo Taken.
+   exit
+endif
+
+#Section 10.
+foreach i ( * )
+  switch ( i )
+  case key:
+  	echo A brass key
+  	breaksw
+  case paper :
+  	echo -n  A slip of paper
+  	breaksw
+  case preserver :
+  	echo -n  A life preserver
+  	breaksw
+  case floppy :
+  	echo -n  A floppy disk
+  	breaksw
+  case rms :
+  	echo -n An RMS statuette
+  	breaksw
+  case gold :
+  case silver :
+  case platinum :
+	echo -n A $i bar
+	breaksw
+  default:
+  	echo $i | grep "^[aeiou].*" >& /dev/null &&  echo -n An $i || echo -n A $i
+  endsw
+  echo : Taken.
+end
+mv * ../i
+

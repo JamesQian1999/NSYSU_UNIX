@@ -1,0 +1,15 @@
+#!/usr/bin/tcsh
+
+if ( $# == 0 ) then
+   set msg = "You must supply an object."
+else if (((__2__)&&(__3__))||(__4__)) then
+   set msg = "I don't know what that is."
+else if ( ! -e $1 ) then
+   set msg = "I don't see that here."
+else if ( $1 != 'dial' ) then
+   set msg = "You can't turn that."
+endif
+if ( $?msg ) then
+   echo $msg
+   exit 1
+endif
