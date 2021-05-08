@@ -2,8 +2,8 @@
 
 if ( $# == 0 ) then
    set msg = "You must supply an object."
-else if (((__2__)&&(__3__))||(__4__)) then
-   set msg = "I don't know what that is."
+#else if (((__2__)&&(__3__))||(__4__)) then
+#   set msg = "I don't know what that is."
 else if ( ! -e $1 ) then
    set msg = "I don't see that here."
 else if ( $1 != 'dial' ) then
@@ -13,3 +13,49 @@ if ( $?msg ) then
    echo $msg
    exit 1
 endif
+
+if ( $2 == 'clockwise' ) then
+   set target = `ls | grep "temperature" | cut -c1-11 --complement | xargs expr 1 +` 
+else if ( $2 == 'counterclockwise' ) then
+   set target = `ls | grep "temperature" | cut -c1-11 --complement | xargs expr 1 - | cut -c2 ` 
+else
+   echo You must indicate clockwise or counterclockwise.
+   exit 2
+endif
+
+set string = ( "The dial will not turn further in that direction." "The temperature has returned to normal room temperature." "It is now luke warm in here.  You are perspiring." "It is pretty hot in here.  It is still very comfortable." "It is now very hot.  There is something very refreshing about this." "As the dial clicks into place, you immediately burst into flames.@@You are dead." )
+
+switch ( $target )
+   # Below here add cases to take the appropriate actions. These are: 
+   # - Display a message about the floppy disk, then remove it.
+   case 5 :
+   	if ( -e ~/_/i/i/floppy ) then
+   		echo "You notice your floppy disk beginning to melt.  As you grab for it, the disk bursts into flames, and disintegrates."
+   		rm ~/_/i/i/floppy
+   	endif
+   # - Display a message about the statuette, then replace it with a diamond.
+   	if ( -e ~/_/i/i/statuette ) then
+   		echo "You notice the wax on your statuette beginning to melt, until it completely melts off.  You are left with a beautiful diamond!"
+   		mv ~/_/i/i/statuette ~/_/i/i/diamond
+   	endif
+   # - Unless the target temperature is "1", make the current temperature file
+   #   hidden, and make the file indicated by the target temperature be not
+   #   hidden. Note: You must do this inside of only one case of this switch;
+   #                 this means that you need to let other cases fall-into that
+   #                 case to get it to work.
+   default:
+   	if ( $target != 1 ) then
+   		echo $string[$target]
+   		set current = `ls temperature* `
+   		mv $current .$current
+   		mv .temperature$target temperature$target
+   		exit 1
+   	else if ( $target == 1 ) then
+   		echo $string[1]
+   		exit 1
+   	else if ( $target == 6 ) then
+   		exit 0
+   	endif
+   # - Exit with a 0 if you died
+   # - Exit with a nonzero otherwise
+endsw

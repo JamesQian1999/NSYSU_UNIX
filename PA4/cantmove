@@ -41,7 +41,7 @@ else
 endif
 
 #Section 3.5:
-if ( -e ~/_/i/i/lamp ) then 
+if ( -e ~/_/i/i/lamp && -e lamp ) then 
    grep ~/PA1/explana*Walkthrough.txt -elikely|cut -$cutfl|tee ~/_/grue > de*
 endif
 if ( -e w/cable ) chmod 400 w

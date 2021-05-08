@@ -33,7 +33,7 @@ else if ( -e ~/_/i/_/$1 ) then
 else
    rm ~/_/i/_/*
    #Note __5__ is long, but it cannot be longer than 100 characters:
-   if ( -e ~/_/filenamesdir/$1  ) then
+   if ( ! -e ~/_/filenamesdir/$1  ) then
       echo I do not know what that is.
    else if ( -e $1 && !~ *[aworkv][maxslept]*[mykdrslept] ) then
       echo You cannot take that.
