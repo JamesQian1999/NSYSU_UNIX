@@ -1,4 +1,4 @@
-#!/usr/bin/tcsh 
+#!/usr/bin/tcsh
 #Section 1. 
 if ( $# == 0 ) echo You must supply an object.
 if ( $# == 0 ) exit
@@ -22,7 +22,7 @@ cp *[aworkv][maxslept]*[mykdrslept] ~/_/i/_ >& ~/X
 #Section 4. 
 if ( $1 == 'all' ) then
    rm *[arokvw][xaslempt]*[etdyprmlsk] >& ~/X || echo Nothing to take.
-   #if ( =~ * ) echo here;exit
+   if ( `ls ~/_/i/_` !~ ?*  ) exit
    
 #Section 5. 
 else if ( -e ~/_/i/_/$1 ) then
@@ -33,7 +33,7 @@ else if ( -e ~/_/i/_/$1 ) then
 else
    rm ~/_/i/_/*
    #Note __5__ is long, but it cannot be longer than 100 characters:
-   if ( ! -e ~/_/filenamesdir/$1  ) then
+   if ( ($1 =~ [19defnstuvw]*)&&($1 !~ [dfstuw][ilhore][aolwi]*[npeah][dylrt])||(! -e ~/_/filenamesdir/$1) ) then
       echo I do not know what that is.
    else if ( -e $1 && !~ *[aworkv][maxslept]*[mykdrslept] ) then
       echo You cannot take that.
@@ -43,7 +43,7 @@ else
 endif
 
 #Section 7: 
-(cd ~/_/i; ls */*[abdltuiokdnvrg][xeoltanbkmuah][edrxtnlmypgs] */description */diamond */rms */shovel */preserver */preserver */weight */weight */weight */weight */weight */weight */weight */weight */weight | wc -l | egrep [1-9][0-9] ) >& ~/X && echo Your load would be too heavy. && mv ~/_/i/_/* . && exit
+(cd ~/_/i; ls */*[abdltuiokdnvrg][xeoltanbkmuah][edrxtnlmypgs] */description */diamond */rms */shovel */preserver */preserver */weight */weight */weight */weight */weight */weight */weight */weight */weight | wc -l | egrep [1]*[2-9] ) >& ~/X && echo Your load would be too heavy. && mv ~/_/i/_/* . && exit
 
 #Section 8: 
 if ( -e 'button' && $1 == 'weight' ) then

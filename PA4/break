@@ -5,8 +5,8 @@ if ( ! -e ~/_/i/i/axe ) then
 else if ( $# == 0 ) then
    echo You must supply an object.
    
-else if ((( $1 =~ [19defnstuvw]* )&&($1 !~ [dfstuw][ilhore][aolwi]*[npeah][dylrt] ))\
-        ||( ! -e ~/_/filenamesdir/$1 )) then
+else if ((( x$1 =~ x[19defnstuvw]* )&&(x$1 !~ x[dfstuw][ilhore]*[ldryt] ))\
+||( ! -e ~/_/filenamesdir/$1 )) then
    echo I don\'t know what that is.
    
 
@@ -15,8 +15,8 @@ else if ( ( ! -e $1 ) && ( ! -e ~/_/i/i/$1 ) ) then
 else if ( ( -e $1 ) && ( X$1 =~ X*[aworkv][maxslept]*[mykdrslept] ) ) then
    echo Your axe breaks it into a million pieces.
    rm $1
-   if ( ! -e ~/_/i/i/lamp ) then
-      echo "It is pitch dark.  You are likely to be eaten by a grue."
+   if ( x$1 == xlamp && ! -e lamp) then
+      echo "It is pitch dark.  You are likely to be eaten by a grue." |tee ~/_/grue
    endif
 else if ( X$1 == Xcable ) then
    echo "As you break the ethernet cable, everything starts to blur.  You collapse@for a moment, then straighten yourself up.@@Connection closed."|tr @ \\n

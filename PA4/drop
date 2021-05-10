@@ -7,15 +7,15 @@ if ( $# == 0 ) then
 else if ( -e ~/_/i/i/$1 ) then
   mv ~/_/i/i/$1 .
   echo Done.
-  if ( ( $1 == weight ) && ( -e button ) ) then
+  if ( ( x$1 == xweight ) && ( -e button ) ) then
     echo A passageway opens.
     ln -s . d; ln -s . e; ln -s . ne; ln -s . se; ln -s . sw; ln -s . w
     mv .nw nw; mv u .u
   endif
 
 #Section #1.5
-#else if (((__2__)&&(__3__))||(__4__)) then
-#   echo I don\'t know what that is.
+else if ((( x$1 =~ x[19defnstuvw]* )&&(x$1 !~ x[dfstuw][ilhore]*[ldryt] ))||( ! -e ~/_/filenamesdir/$1 )) then
+   echo I don\'t know what that is.
 
 #Section #2:
 else

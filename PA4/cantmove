@@ -8,7 +8,11 @@ set cutfl = "c1-4 --complement"
 set pos = `cat description | grep 'You are at the south side of a lake.  A road goes to the south.' >& /dev/null && echo 1 || echo 0`
 if ( ! -e ~/_/i/i/preserver ) then
 	if ( $pos == 1) then 
-		echo You dive in the water, and at first notice it is quite cold.  You then start to get used to it as you realize that you never really learned how to swim.
+		echo "You dive in the water, and at first notice it is quite cold.  You then\
+start to get used to it as you realize that you never really learned how\
+to swim."
+		echo ''
+		echo 'You are dead.'
 		touch ~/_/die
 		exit 1
 	endif
@@ -41,7 +45,8 @@ else
 endif
 
 #Section 3.5:
-if ( -e ~/_/i/i/lamp && -e lamp ) then 
+#if ( ! -e $1 && ! -e ../lamp && ! -e ../*/lamp && ! -e */lamp && ! -e ~/_/i/i/lamp&&  ( ! -e lamp ) && ( `pwd` !~ *egRoom/e ) && ( `pwd` !~ *egRoom ) && ( `pwd` !~ *nw/s* )  ) then 
+if ( ( ! -e  ~/_/i/i/lamp ) && ( ! -e lamp ) && ( `pwd` !~ *gRoom/e ) && ( `pwd` !~ *gRoom ) && ( `pwd` !~ *nw/s* ) ) then 
    grep ~/PA1/explana*Walkthrough.txt -elikely|cut -$cutfl|tee ~/_/grue > de*
 endif
 if ( -e w/cable ) chmod 400 w
