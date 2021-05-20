@@ -45,7 +45,6 @@ else
 endif
 
 #Section 3.5:
-#if ( ! -e $1 && ! -e ../lamp && ! -e ../*/lamp && ! -e */lamp && ! -e ~/_/i/i/lamp&&  ( ! -e lamp ) && ( `pwd` !~ *egRoom/e ) && ( `pwd` !~ *egRoom ) && ( `pwd` !~ *nw/s* )  ) then 
 if ( ( ! -e  ~/_/i/i/lamp ) && ( ! -e lamp ) && ( `pwd` !~ *gRoom/e ) && ( `pwd` !~ *gRoom ) && ( `pwd` !~ *nw/s* ) ) then 
    grep ~/PA1/explana*Walkthrough.txt -elikely|cut -$cutfl|tee ~/_/grue > de*
 endif

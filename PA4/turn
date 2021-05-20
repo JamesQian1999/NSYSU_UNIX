@@ -2,7 +2,7 @@
 
 if ( $# == 0 ) then
    set msg = "You must supply an object."
-else if ((( $1 =~ [19defnstuvw]* )&&($1 !~ [dfstuw][ilhore]*[ldryt] ))||( ! -e ~/_/filenamesdir/$1 )) then
+else if ((( $1 =~ [19defnstuvw]* )&&($1 !~ [dfstuw][ilhore]*[anpeh][ldryt] ))||( ! -e ~/_/filenamesdir/$1 )) then
    set msg = "I don't know what that is."
 else if ( ! -e $1 ) then
    set msg = "I don't see that here."
@@ -34,7 +34,8 @@ switch ( $target )
    	if ( -e ~/_/i/i/rms || -e rms ) then
    		echo "You notice the wax on your statuette beginning to melt, until it completely\
 melts off.  You are left with a beautiful diamond!"
-   		mv ~/_/i/i/rms ~/_/i/i/diamond
+   		mv ~/_/i/i/rms ~/_/i/i/diamond >& /dev/null
+   		mv rms diamond >& /dev/null
    	endif
    	# - Display a message about the floppy disk, then remove it.
    	if ( -e ~/_/i/i/floppy || -e floppy ) then
