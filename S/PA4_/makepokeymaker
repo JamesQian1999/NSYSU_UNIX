@@ -1,0 +1,28 @@
+#!/usr/bin/sed -f
+
+# Section 1:
+
+1i mkdir pokey pokey\/rooms pokey\/usr pokey\/usr\/toukmond\nseq 2306 \| tee -a pokey\/usr\/toukmond\/cd \| tee -a pokey\/usr\/toukmond\/ls \| tee -a pokey\/usr\/toukmond\/ftp \| tee -a pokey\/usr\/toukmond\/echo \| tee -a pokey\/usr\/toukmond\/pwd \| tee -a pokey\/usr\/toukmond\/rlogin \| tee -a pokey\/usr\/toukmond\/ssh \| tee -a pokey\/usr\/toukmond\/uncompress \| tee -a pokey\/usr\/toukmond\/cat  >& /dev/null
+
+# Section 2:
+/.*filename.*/,/^$/d
+
+# Section 3:
+s/==> //;Ta;s/description <==//;h;D;:a;/^$/d
+
+# Section 4:
+y/ABCDEFGHIJKLMNOPQRSTUVWXYZ /abcdefghijklmnopqrstuvwxyz-/;y/\//-/;G
+
+# Section 5:
+s/^\.\/.*/&/;tb;s/\n/@/;:b
+
+# Section 6: 
+a cp ~/_/i/i/key pokey/usr/toukmond/ >& /dev/null
+s/.*@/mkdir pokey\/rooms\/&cp /;s/@/\n/;s/cp.*/&*[arokvwe][aslemptx]*[ldetknysprm] /
+s/\(pokey\/rooms\/.*\)\(cp.*\)/\1\2 \1/
+
+# Section 7:
+s/cp \(\.\/.*\/\)\(\*\[arokvwe\]\[aslemptx\]\*\[ldetknysprm\]\)  \(pokey\/rooms\/.*\)/cp \1\2 \3\ntouch -r \11 \3/
+
+# Section 8:
+a chmod -R 755 \.\/pokey\/

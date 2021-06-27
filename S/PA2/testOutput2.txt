@@ -1,0 +1,375 @@
+rm: cannot remove 'rooms/mistyRoom/e/e/n/w/description': Permission denied
+rm: cannot remove 'rooms/mistyRoom/e/e/n/w/cable': Permission denied
+rm: cannot remove 'rooms/mistyRoom/e/e/n/w/9': Permission denied
+rm: cannot remove 'rooms/mistyRoom/e/e/n/w/ibm': Permission denied
+tar: rooms/mistyRoom/e/e/n/w/9: Cannot open: Permission denied
+tar: rooms/mistyRoom/e/e/n/w/cable: Cannot open: Permission denied
+tar: rooms/mistyRoom/e/e/n/w/description: Cannot open: Permission denied
+tar: rooms/mistyRoom/e/e/n/w/ibm: Cannot open: Permission denied
+tar: Exiting with failure status due to previous errors
+Receiving room
+You are in a round, stone room with a door to the east.  There
+is a sign on the wall that reads: ‘receiving room’.
+There is a lamp nearby.
+There is a shiny brass key here.
+There is a shovel here.
+There is a slip of paper here.
+There is an axe here.
+There is an emerald bracelet here.
+>e
+Northbound Hallway
+You are at the south end of a hallway that leads to the north.  There
+are rooms to the east and west.
+>n
+End of N/S Hallway
+You are at the end of a north/south hallway.  You can go back to the south,
+or off to a room to the east.
+>e
+Weight room
+You are in an old weight room.  All of the equipment is either destroyed or
+completely broken.  There is a door out to the west, and there is a ladder
+leading down a hole in the floor.
+There is a 10 pound weight here.
+There is a life preserver here.
+>x weight
+You observe that the weight is heavy.
+>x ladder
+It is a normal ladder that is permanently attached to the hole.
+>x preserver
+It says S. S. Minnow.
+>x life
+cat: life: No such file or directory
+>d
+Maze button room
+You are in a maze of twisty little passages, all alike.
+There is a button on the ground here.
+>nw
+You cannot go that way.
+>u
+Weight room
+There is a 10 pound weight here.
+There is a life preserver here.
+>d
+Maze button room
+There is a button on the ground here.
+>x button
+As you press the button, you notice a passageway open up, but
+as you release it, the passageway closes.
+>press button
+As you press the button, you notice a passageway open up, but
+as you release it, the passageway closes.
+>nw
+You cannot go that way.
+>press ladder
+You cannot press that.
+>x ladder
+It is a normal ladder that is permanently attached to the hole.
+>press lamp
+bash: lamp: No such file or directory
+>x lamp
+cat: lamp: No such file or directory
+>drop weight
+
+Command 'drop' not found, did you mean:
+
+  command 'krop' from snap krop (0.6.0)
+  command 'dtop' from deb diod (1.0.24-4)
+  command 'grop' from deb grop (2:0.10-1.1build1)
+  command 'krop' from deb krop (0.5.1+ds-1)
+
+See 'snap info <snapname>' for additional versions.
+
+>dropweight
+You do not have that.
+>u
+Weight room
+There is a 10 pound weight here.
+There is a life preserver here.
+>getall
+Taken: a preserver
+Taken: a weight
+>dropweight
+Done.
+>d
+Maze button room
+There is a button on the ground here.
+>u
+Weight room
+There is a 10 pound weight here.
+>getall
+Taken: a weight
+>d
+Maze button room
+There is a button on the ground here.
+>dropweight
+Done.
+A passageway opens.
+>l
+Maze button room
+You are in a maze of twisty little passages, all alike.
+There is a 10 pound weight here.
+There is a button on the ground here.
+>i
+You currently have:
+A preserver
+>u
+You cannot go that way.
+>getall
+Taken: a weight
+>u
+You cannot go that way.
+>nw
+Maze
+You are in a maze of little twisty passages, all alike.
+>u
+Maze 
+You are in a maze of thirsty little passages, all alike.
+There is a floppy disk here.
+There is a wax statuette of Richard Stallman here.
+>getall
+Taken: a floppy
+Taken: a rms
+>se
+Maze  
+You are in a maze of twenty little passages, all alike.
+>d
+Maze   
+You are in a daze of twisty little passages, all alike.
+>nw
+Maze    
+You are in a maze of twisty little cabbages, all alike.
+>ne
+Weight room
+>w
+End of N/S Hallway
+>s
+Northbound Hallway
+>w
+Receiving room
+There is a lamp nearby.
+There is a shiny brass key here.
+There is a shovel here.
+There is a slip of paper here.
+There is an axe here.
+There is an emerald bracelet here.
+>getall
+Taken: a axe
+Taken: a bracelet
+Taken: a key
+Taken: a lamp
+Taken: a paper
+Taken: a shovel
+>dropweight
+Done.
+>e
+Northbound Hallway
+>n
+End of N/S Hallway
+>e
+Weight room
+>d
+Maze button room
+There is a button on the ground here.
+>nw
+Maze
+>u
+Maze 
+>se
+Maze  
+>d
+Maze   
+>nw
+Maze    
+>nw
+Reception area
+You are in a reception area for a health and fitness center.  The place
+appears to have been recently ransacked, and nothing is left.  There is
+a door out to the south, and a crawlspace to the southeast.
+>s
+Health Club front
+You are outside a large building to the north which used to be a health
+and fitness center.  A road leads to the south.
+>s
+Lakefront North
+You are at the north side of a lake.  On the other side you can see
+a road which leads to a cave.  The water appears very deep.
+>x lake
+I see nothing special about that.
+>s
+Lakefront South
+You are at the south side of a lake.  A road goes to the south.
+>s
+Cave Entrance
+The entrance to a cave is to the south.  To the north, a road leads
+towards a deep lake.  On the ground nearby there is a chute, with a sign
+that says ‘put treasures here for points’.
+>x chute
+I see nothing special about that.
+>n
+Lakefront South
+>put
+Nothing to put treasures into.
+>score
+You have scored 00 points.
+>i
+You currently have:
+A axe
+A bracelet
+A floppy
+A key
+A lamp
+A paper
+A preserver
+A rms
+A shovel
+>s
+Cave Entrance
+>put
+You hear it slide down the chute and off into the distance.
+You have scored 10 points.
+>put
+No treasure to put into it.
+>n
+Lakefront South
+>put
+Nothing to put treasures into.
+>i
+You currently have:
+A axe
+A floppy
+A key
+A lamp
+A paper
+A preserver
+A rms
+A shovel
+>score
+You have scored 10 points.
+>ls ~/PA2/rooms | xargs echo | fold -sw75
+There buttonRoom es i mistyRoom receivingRoom treasureRoom
+>cd ~/PA2/rooms/treasureRoom/
+>ls | xargs echo | fold -sw75
+9 bracelet description
+>l
+Treasure room
+You are in the treasure room.  A door leads out to the north.
+There is an emerald bracelet here.
+>n
+You cannot go that way.
+>mv 1 9
+>cd ~/_/buttonRoom/nw/u/se/d/nw/nw/s/s/s
+>s
+Cave Entrance
+>s
+Misty Room
+You are in a misty, humid room carved into a mountain.
+To the north is the remains of a rockslide.  To the east, a small
+passage leads away into the darkness.
+There is a gold bar here.
+>n
+You cannot go that way.
+>basename `pwd`
+mistyRoom
+>getall
+Taken: a gold
+>e
+Cave E/W passage
+You are in an east/west passageway.  The walls here are made of
+multicolored rock and are quite beautiful.
+>e
+N/S/W Junction
+You are at the junction of two passages. One goes north/south, and
+the other goes west.
+>s
+South end of cave passage
+You are at the south end of a north/south passageway.  There is a hole
+in the floor here, into which you could probably fit.
+>d
+Bathroom
+You are in a bathroom built for workers in the cave.  There is a
+urinal hanging on the wall, and some exposed pipes on the opposite
+wall where a sink used to be.  To the north is a bedroom.
+>i
+You currently have:
+A axe
+A floppy
+A gold
+A key
+A lamp
+A paper
+A preserver
+A rms
+A shovel
+>score
+You have scored 10 points.
+>put
+You hear it plop down in some water below.
+>score
+You have scored 10 points.
+>i
+You currently have:
+A axe
+A floppy
+A key
+A lamp
+A paper
+A preserver
+A rms
+A shovel
+>ls ~/PA2/rooms/treasureRoom/ | xargs echo | fold -sw75
+9 bracelet description
+>l
+Bathroom
+You are in a bathroom built for workers in the cave.  There is a
+urinal hanging on the wall, and some exposed pipes on the opposite
+wall where a sink used to be.  To the north is a bedroom.
+>getall
+Nothing to take.
+>ls ~/PA2/rooms/treasureRoom/ | xargs echo | fold -sw75
+9 bracelet description
+>score
+You have scored 10 points.
+>flush
+Whoooosh!!
+You have scored 20 points.
+>ls ~/PA2/rooms/treasureRoom/ | xargs echo | fold -sw75
+9 bracelet description gold
+>mv ~/PA2/rooms/i/i/* ~/PA2/rooms/treasureRoom/
+>ls ~/PA2/rooms/treasureRoom/ | xargs echo | fold -sw75
+9 axe bracelet description floppy gold key lamp paper preserver rms shovel
+>i
+You currently have:
+>score
+You have scored 20 points.
+>mv ~/PA2/rooms/treasureRoom/[^9d]* ~/PA2/rooms/i/i
+>ls ~/PA2/rooms/treasureRoom | xargs echo | fold -sw75
+9 description
+>i
+You currently have:
+A axe
+A bracelet
+A floppy
+A gold
+A key
+A lamp
+A paper
+A preserver
+A rms
+A shovel
+>score
+You have scored 00 points.
+> ls ~/PA2/rooms/i/i | xargs echo | fold -sw75
+axe bracelet floppy gold key lamp paper preserver rms shovel
+>put
+You hear it plop down in some water below.
+> ls ~/PA2/rooms/i/i | xargs echo | fold -sw75
+axe floppy key lamp paper preserver rms shovel
+> ls ~/PA2/rooms/treasureRoom | xargs echo | fold -sw75
+9 description
+> ls | xargs echo | fold -sw75
+1 description pipe pipes urinal
+>ls ~/PA2/rooms | xargs echo | fold -sw75
+There bracelet buttonRoom es gold i mistyRoom receivingRoom treasureRoom
+>flush
+Whoooosh!!
+You have scored 20 points.

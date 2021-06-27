@@ -1,0 +1,37 @@
+mkdir pokey
+mkdir pokey/rooms
+mkdir pokey/usr
+mkdir pokey/usr/toukmond
+seq 2306 > pokey/usr/toukmond/cd;seq 2306 > pokey/usr/toukmond/ls;seq 2306 > pokey/usr/toukmond/ftp;seq 2306 > pokey/usr/toukmond/echo;seq 2306 > pokey/usr/toukmond/pwd;seq 2306 > pokey/usr/toukmond/rlogin;seq 2306 > pokey/usr/toukmond/ssh;seq 2306 > pokey/usr/toukmond/uncompress;seq 2306 > pokey/usr/toukmond/cat
+mkdir pokey/rooms/receiving-room; cp ./receivingRoom/*[awokevrw][sleptmax]*[a-z] pokey/rooms/receiving-room
+ls ~/_/i/i/key >& ~/X && touch pokey/usr/toukmond/key
+touch pokey/rooms/receiving-room -r ./receivingRoom/1
+mkdir pokey/rooms/northbound-hallway; cp ./receivingRoom/e/*[awokevrw][sleptmax]*[a-z] pokey/rooms/northbound-hallway
+ls ~/_/i/i/key >& ~/X && touch pokey/usr/toukmond/key
+touch pokey/rooms/northbound-hallway -r ./receivingRoom/e/1
+mkdir pokey/rooms/end-of-n-s-hallway; cp ./receivingRoom/e/n/*[awokevrw][sleptmax]*[a-z] pokey/rooms/end-of-n-s-hallway
+ls ~/_/i/i/key >& ~/X && touch pokey/usr/toukmond/key
+touch pokey/rooms/end-of-n-s-hallway -r ./receivingRoom/e/n/1
+mkdir pokey/rooms/weight-room; cp ./receivingRoom/e/n/e/*[awokevrw][sleptmax]*[a-z] pokey/rooms/weight-room
+ls ~/_/i/i/key >& ~/X && touch pokey/usr/toukmond/key
+touch pokey/rooms/weight-room -r ./receivingRoom/e/n/e/1
+mkdir pokey/rooms/sauna; cp ./receivingRoom/e/e/*[awokevrw][sleptmax]*[a-z] pokey/rooms/sauna
+ls ~/_/i/i/key >& ~/X && touch pokey/usr/toukmond/key
+touch pokey/rooms/sauna -r ./receivingRoom/e/e/1
+mkdir pokey/rooms/misty-room; cp ./mistyRoom/*[awokevrw][sleptmax]*[a-z] pokey/rooms/misty-room
+ls ~/_/i/i/key >& ~/X && touch pokey/usr/toukmond/key
+touch pokey/rooms/misty-room -r ./mistyRoom/1
+mkdir pokey/rooms/cave-e-w-passage; cp ./mistyRoom/e/*[awokevrw][sleptmax]*[a-z] pokey/rooms/cave-e-w-passage
+ls ~/_/i/i/key >& ~/X && touch pokey/usr/toukmond/key
+touch pokey/rooms/cave-e-w-passage -r ./mistyRoom/e/1
+mkdir pokey/rooms/n-s-w-junction; cp ./mistyRoom/e/e/*[awokevrw][sleptmax]*[a-z] pokey/rooms/n-s-w-junction
+ls ~/_/i/i/key >& ~/X && touch pokey/usr/toukmond/key
+touch pokey/rooms/n-s-w-junction -r ./mistyRoom/e/e/1
+mkdir pokey/rooms/north-end-of-cave-passage; cp ./mistyRoom/e/e/n/*[awokevrw][sleptmax]*[a-z] pokey/rooms/north-end-of-cave-passage
+ls ~/_/i/i/key >& ~/X && touch pokey/usr/toukmond/key
+touch pokey/rooms/north-end-of-cave-passage -r ./mistyRoom/e/e/n/1
+mkdir pokey/rooms/gamma-computing-center; cp ./mistyRoom/e/e/n/w/*[awokevrw][sleptmax]*[a-z] pokey/rooms/gamma-computing-center
+ls ~/_/i/i/key >& ~/X && touch pokey/usr/toukmond/key
+touch pokey/rooms/gamma-computing-center -r ./mistyRoom/e/e/n/w/1
+==> ./filenamesdir/description <==
+I don't know what that is.

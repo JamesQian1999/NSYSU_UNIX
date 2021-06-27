@@ -1,0 +1,72 @@
+mkdir pokey pokey/rooms pokey/usr pokey/usr/toukmond
+seq 2306 | tee -a pokey/usr/toukmond/cd | tee -a pokey/usr/toukmond/ls | tee -a pokey/usr/toukmond/ftp | tee -a pokey/usr/toukmond/echo | tee -a pokey/usr/toukmond/pwd | tee -a pokey/usr/toukmond/rlogin | tee -a pokey/usr/toukmond/ssh | tee -a pokey/usr/toukmond/uncompress | tee -a pokey/usr/toukmond/cat  >& /dev/null
+mkdir pokey/rooms/receiving-room
+cp ./receivingRoom/*[arokvwe][aslemptx]*[ldetknysprm] pokey/rooms/receiving-room
+
+touch -r ./receivingRoom/1 pokey/rooms/receiving-room
+
+cp ~/_/i/i/key pokey/usr/toukmond/ >& /dev/null
+chmod -R 755 ./pokey/
+mkdir pokey/rooms/northbound-hallway
+cp ./receivingRoom/e/*[arokvwe][aslemptx]*[ldetknysprm] pokey/rooms/northbound-hallway
+
+touch -r ./receivingRoom/e/1 pokey/rooms/northbound-hallway
+
+cp ~/_/i/i/key pokey/usr/toukmond/ >& /dev/null
+chmod -R 755 ./pokey/
+mkdir pokey/rooms/end-of-n-s-hallway
+cp ./receivingRoom/e/n/*[arokvwe][aslemptx]*[ldetknysprm] pokey/rooms/end-of-n-s-hallway
+
+touch -r ./receivingRoom/e/n/1 pokey/rooms/end-of-n-s-hallway
+
+cp ~/_/i/i/key pokey/usr/toukmond/ >& /dev/null
+chmod -R 755 ./pokey/
+mkdir pokey/rooms/weight-room
+cp ./receivingRoom/e/n/e/*[arokvwe][aslemptx]*[ldetknysprm] pokey/rooms/weight-room
+
+touch -r ./receivingRoom/e/n/e/1 pokey/rooms/weight-room
+
+cp ~/_/i/i/key pokey/usr/toukmond/ >& /dev/null
+chmod -R 755 ./pokey/
+mkdir pokey/rooms/sauna
+cp ./receivingRoom/e/e/*[arokvwe][aslemptx]*[ldetknysprm] pokey/rooms/sauna
+
+touch -r ./receivingRoom/e/e/1 pokey/rooms/sauna
+
+cp ~/_/i/i/key pokey/usr/toukmond/ >& /dev/null
+chmod -R 755 ./pokey/
+mkdir pokey/rooms/misty-room
+cp ./mistyRoom/*[arokvwe][aslemptx]*[ldetknysprm] pokey/rooms/misty-room
+
+touch -r ./mistyRoom/1 pokey/rooms/misty-room
+
+cp ~/_/i/i/key pokey/usr/toukmond/ >& /dev/null
+chmod -R 755 ./pokey/
+mkdir pokey/rooms/cave-e-w-passage
+cp ./mistyRoom/e/*[arokvwe][aslemptx]*[ldetknysprm] pokey/rooms/cave-e-w-passage
+
+touch -r ./mistyRoom/e/1 pokey/rooms/cave-e-w-passage
+
+cp ~/_/i/i/key pokey/usr/toukmond/ >& /dev/null
+chmod -R 755 ./pokey/
+mkdir pokey/rooms/n-s-w-junction
+cp ./mistyRoom/e/e/*[arokvwe][aslemptx]*[ldetknysprm] pokey/rooms/n-s-w-junction
+
+touch -r ./mistyRoom/e/e/1 pokey/rooms/n-s-w-junction
+
+cp ~/_/i/i/key pokey/usr/toukmond/ >& /dev/null
+chmod -R 755 ./pokey/
+mkdir pokey/rooms/north-end-of-cave-passage
+cp ./mistyRoom/e/e/n/*[arokvwe][aslemptx]*[ldetknysprm] pokey/rooms/north-end-of-cave-passage
+
+touch -r ./mistyRoom/e/e/n/1 pokey/rooms/north-end-of-cave-passage
+
+cp ~/_/i/i/key pokey/usr/toukmond/ >& /dev/null
+chmod -R 755 ./pokey/
+mkdir pokey/rooms/gamma-computing-center
+cp ./mistyRoom/e/e/n/w/*[arokvwe][aslemptx]*[ldetknysprm] pokey/rooms/gamma-computing-center
+
+touch -r ./mistyRoom/e/e/n/w/1 pokey/rooms/gamma-computing-center
+
+cp ~/_/i/i/key pokey/usr/toukmond/ >& /dev/null
+chmod -R 755 ./pokey/

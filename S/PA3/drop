@@ -1,0 +1,25 @@
+#!/usr/bin/tcsh
+if ( $#argv == 0 ) then
+	echo "You must supply an object."
+else 
+	set item = `ls ~/_/i/i | fgrep -w $argv[1] || echo 0`
+	set button = `ls  | fgrep -w button || echo 0`
+	if ( $item == 0 ) then
+		echo "You don't have that."
+	else if ( $item == "weight" && $button == "button" ) then
+		mv .nw nw
+		mv u .u
+		ln -s . e
+		ln -s . w
+		ln -s . ne
+		ln -s . sw
+		ln -s . se
+		ln -s . d
+		mv ~/_/i/i/$item .
+		echo "Done."
+		echo "A passageway opens."
+	else 
+		mv ~/_/i/i/$item .
+		echo "Done."
+	endif
+endif

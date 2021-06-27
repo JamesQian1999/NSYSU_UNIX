@@ -1,0 +1,4 @@
+#!/usr/bin/tcsh
+mv $argv[1] ~/_/i/_ >& /dev/null
+cd ~/_/i/_
+mv ~/_/i/_/*  ~/_/i/i >& /dev/null ; echo Taken.
